@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
+
+:root{
+  --color:#6C5CE7;
+}
+
+*{
+  font-family: 'Tajawal', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  text-decoration: none;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  overflow-x: hidden;
+  background: rgba(0, 0, 2, 0.884);
+}
+
+
+
+.home{
+  min-height: 100vh;
+  width: 100vw;
+  background:linear-gradient(rgba(235, 4, 100, 0.979), rgba(0, 0, 0, 0));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  padding:0 1rem;
+  position: relative;
+  overflow: hidden !important;
+}
+
+
+
+.home .wave{
+  position: absolute;
+  bottom: -.5rem;
+  left: 0;
+  height:11rem;
+  width: 100%;
+  background: url(../images/wave.png);
+  background-size: 100rem 11rem;
+  background-repeat: repeat-x;
+  animation:waves 10s linear infinite;
+}
+
+.home .wave2{
+  animation-direction: reverse;
+  opacity: .2;
+}
+
+.home .wave3{
+  animation-duration: 4s;
+  opacity: .5;
+}
+
+@keyframes waves{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 100rem;
+  }
+}
+
+.home .fa-cog{
+  position: absolute;
+  font-size: 30rem;
+  opacity: .15;
+  color:#fff;
+  animation: rotate 10s linear infinite;
+}
+
+.home .nut1{
+  top:10%; left: -15rem;
+}
+
+.home .nut2{
+  bottom:23%; right: -13rem;
+  animation-direction: reverse;
+}
+
+@keyframes rotate{
+  100%{
+    transform: rotate(360deg);
+  }
+}
+a{
+
+  color: rgba(255, 255, 255, 0.205);
+}
+
+ h1 {
+  position:absolute;
+  top: 300px;
+  font-size: 360px;
+  color: #ffffff1e;
+  position: fixed;
+  margin-bottom: 200px;
+  transition: all 400ms ease-in-out;
+}
+ a:hover {
+  color: #ff048ef6;
+  cursor: pointer;
+  text-shadow:0px 300px rgba(255, 255, 255, 0.027);
+}
+
+@media screen and (max-width:1000px) {
+  a{
+    color: rgba(255, 255, 255, 0.205);
+    font-size: 130px;
+  }
+  
+   
+}
+@media screen and (max-width:575px) {
+  a{
+    color: rgba(255, 255, 255, 0.205);
+    font-size: 100px;
+  }
+
+  img{
+    width: 100px;
+    position: absolute;
+    top: 80px;
+    color: rgba(197, 68, 118, 0.733);
+}
+
+h2 {
+font-size: 20px !important;
+}
+  
+}
+@media screen and (max-width:375px) {
+  a{
+    color: rgba(255, 255, 255, 0.205);
+    font-size: 90px;
+  }
+  img{
+    width: 100px;
+    position: absolute;
+    top: 80px;
+    color: rgba(197, 68, 118, 0.733);
+  
+}
+}
+
+img{
+  width: 500px;
+  position: absolute;
+  top: 80px;
+  color: rgba(197, 68, 118, 0.733);
+}
+
+h2 {
+  position: absolute;
+  direction: rtl;
+  font-size: 20px;
+  color: #fff;
+  top: 20px;
+  background: rgba(10, 1, 3, 0.096);
+  padding: 5px 30px;
+  animation: animate 3s linear infinite;
+  transition: all 2s ease-in-out;
+}
+
+@keyframes animate {
+  0% {
+    font-size: 30px;
+    opacity: 0.2;
+  }
+  100% {
+    font-size: 30px;
+  }
+}
+
+i{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 60px;
+  position: absolute;
+  top: 400px;
+  animation: animate2 1s linear infinite;
+}
+
+@keyframes animate2 {
+  0% {
+    top: 350px;
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    color: #fff;
+  }
+}
